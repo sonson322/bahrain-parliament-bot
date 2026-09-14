@@ -10,8 +10,8 @@ from datetime import datetime
 # ==========================================
 # إعدادات - عدّل هذه القيم فقط
 # ==========================================
-TELEGRAM_TOKEN = "8511454145:AAG0lCqkM_2QEC90DfUQABckMadMtRIO8X8"
-CHAT_ID = "807297651"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+CHAT_ID = os.environ.get("CHAT_ID", "")
  
 # ==========================================
 # الكلمات المفتاحية للأخبار النيابية
